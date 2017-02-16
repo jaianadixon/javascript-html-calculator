@@ -2,14 +2,18 @@
 <html>
     <head>
         <title>My Calculator</title>
-        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn:400i|VT323" rel="stylesheet">
     </head>
     <body>
         <h1 id="title">My Calculator</h1>
         <div id="keypad">
-            <table border="2">
+            <table>
                 <tr>
-                    <td colspan="4" id="display-bar" height="28px"></td>
+                    <td colspan="4"  height="28px"><div id="display-bar"></div></div></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><div id="calculator-brand">TI BUDI</div></td>
                 </tr>
                 <tr>
                     <td><input type="button" value="9" onclick="display(9)"/></td>
@@ -29,13 +33,13 @@
                     <td><input type="button" value="3" onclick="display(3)"/></td>
                     <td><input type="button" value="2" onclick="display(2)"/></td>
                     <td><input type="button" value="1" onclick="display(1)"/></td>
-                    <td><input type="button" value="-" onclick="display(-)"/></td>
+                    <td><input type="button" value="-" onclick="display('-')"/></td>
                 </tr>
                 
                  <tr>
                     <td><input type="button" value="0" onclick="display(0)"/></td>
                     <td><input type="button" value="C" onclick="clearDisplay()"/></td>
-                    <td><input type="button" value="=" onclick=""/></td>
+                    <td><input type="button" value="=" onclick="calculate()"/></td>
                     <td><input type="button" value="+" onclick="display('+')"/></td>
                 </tr>
             </table>
